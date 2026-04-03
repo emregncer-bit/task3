@@ -28,9 +28,8 @@ Projeyi derlemek ve çalıştırmak için sisteminizde `gcc` derleyicisi bulunma
 Terminali açın, proje dizinine gidin ve aşağıdaki komutu çalıştırın:
 ```bash
 gcc -Wall -Wextra -o task3 main.c can_queue.c
-
-
+```
 2. Projeyi Çalıştırma:
 Derleme işlemi başarıyla tamamlandıktan sonra simülasyonu başlatmak için terminale şu komutu yazın:
-
+```bash
 ./task3
