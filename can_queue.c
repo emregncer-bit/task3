@@ -30,7 +30,7 @@ void enqueue(MesajKuyrugu *k, CAN_Mesaj yeni_mesaj) {
     }
 
     k->mesajlar[k->rear] = yeni_mesaj;
-    k->rear = (k-> rear + 1) & k->kapasite; // en arkaya bi mesaj daha eklenir
+    k->rear = (k-> rear + 1) % k->kapasite; // en arkaya bi mesaj daha eklenir
     k->count++;
 
 
