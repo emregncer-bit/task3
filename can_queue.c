@@ -24,7 +24,7 @@ void kuyrukOlustur(MesajKuyrugu *k, int kapasite) {
 }
 
 void enqueue(MesajKuyrugu *k, CAN_Mesaj yeni_mesaj) {
-    if (k->count == k->kapasite) {
+    if (k->count >= k->kapasite) {
         printf("[Hata] CAN Bus hattı dolu! Kapasite (%d) aşıldı. Yeni mesaj eklenemez.\n", k->kapasite);
         return;
     }
